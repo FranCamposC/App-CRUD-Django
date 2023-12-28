@@ -6,4 +6,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def inicio(request):
-    return HttpResponse("<h1>Bienvenido a una pagina web con CRUD</h1>")
+    return render(request, 'paginas/inicio.html') 
+
+def contacto(request):
+    return render(request,'paginas/nosotros.html') #BUSCA EN LOS TEMPLATES
+
+def libros(request):   
+    return render(request,'libros/index.html')
