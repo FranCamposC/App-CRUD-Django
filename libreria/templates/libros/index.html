@@ -2,10 +2,16 @@
 
 {%block titulo%}   Lista de libros {%endblock%}
 
-{%block contenido%}   
+{%block contenido%}
 <div class="card">
-    <div class="card-header">Listar libros
-
+    
+    <div class="card-header">
+        <a
+            name=""
+            id=""
+            class="btn btn-primary"
+            href="/libros/crear"
+            role="button">Agregar nuevo libro</a>
     </div>
     <div class="card-body">
         <h4 class="card-title">Libros</h4>
@@ -31,7 +37,10 @@
                         <td>Django con Python</td>
                         <td>Imagen.jpg</td>
                         <td>Libro que habla sobre Django</td>
-                        <td>Editar | Borrar</td>
+                        <td>
+                            <a name="" id="" class="btn btn-info" href="/libros/editar" role="button">Editar</a>
+                            |
+                            <a name="" id="" class="btn btn-info" href="#" role="button">Borrar</a></td>
                     </tr>
 
                 </tbody>
